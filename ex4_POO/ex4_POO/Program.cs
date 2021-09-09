@@ -8,17 +8,17 @@ namespace ex4_POO
         //static double Pi= 3.14;
         static void Main(string[] args)
         {
-            Calculadora calc = new Calculadora();
+            //Calculadora calc = new Calculadora();
             
             Console.Write("Entre o valor do raio: ");
             double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             
-            double circ = calc.Circuferencia(raio);
-            double volume = calc.Volume(raio);
+            double circ = Calculadora.Circuferencia(raio);
+            double volume = Calculadora.Volume(raio);
             
             Console.WriteLine("Circuferência: " + circ.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Valor de PI: " + calc.Pi.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Valor de PI: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
 
             //---------------------------------------------------
 
